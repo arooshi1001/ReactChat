@@ -1,0 +1,40 @@
+.userInfo {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #06095971; /* White background for user info section */
+  border-radius: 10px; /* Rounded corners for a softer look */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin-bottom: 20px; /* Space below user info */
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+}
+
+.icons img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.icons img:hover {
+  color: #0288d1; /* Blue color on hover (can be adjusted) */
+  transform: scale(1.1); /* Slightly increase size on hover */
+}

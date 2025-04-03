@@ -1,0 +1,65 @@
+.list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #06095971; /* Very light blue background for the container */
+}
+
+.user-info-container {
+  margin-bottom: 20px; /* Space between Userinfo and ChatList */
+}
+
+.chat-list-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* Allows scrolling if content overflows */
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px; /* Rounded corners for a softer look */
+  background-color: #06095971; /* White background for list items */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin-bottom: 10px; /* Space between items */
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.list-item:hover {
+  background-color: #06095971; /* Light blue background on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.list-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px; /* Space between image and text */
+}
+
+.list-item .text {
+  flex: 1;
+}
+
+.list-item .text .username {
+  font-size: 16px;
+  font-weight: bold;
+  color: #0277bd; /* Dark blue for primary text */
+}
+
+.list-item .text .last-message {
+  font-size: 14px;
+  color: #0288d1; /* Medium blue for secondary text */
+}
+
+.empty-state {
+  text-align: center;
+  color: #64b5f6; /* Light blue color for placeholder text */
+  font-size: 18px;
+  margin-top: 20px;
+}
